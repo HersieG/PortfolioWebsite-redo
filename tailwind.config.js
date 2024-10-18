@@ -11,6 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      textColor: {
+        1: "yellow",
+        2: "red",
+      },
     },
   },
   plugins: [],

@@ -24,4 +24,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .link-tab {
+    @apply mr-4 hover:text-slate-600 transition-colors hover:duration-[600ms] text-2;
+  }
 }
