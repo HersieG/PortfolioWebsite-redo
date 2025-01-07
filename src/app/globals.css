@@ -19,13 +19,38 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 
-  .link-tab {
-    @apply mr-4 hover:text-slate-600 transition-colors hover:duration-[600ms] text-2;
+  .underline-animation {
+    @apply relative;
+  }
+
+  .underline-animation::after {
+    @apply absolute content-[''] w-full h-1 bg-purple-600 left-0 bottom-[-4px] scale-x-0 hover:scale-x-100 origin-bottom-right hover:origin-bottom-left transition-transform duration-700;
+  }
+  .header {
+    @apply text-4xl bg-gradient-to-b from-[#101415] to-gray-800/30 p-6 rounded-full;
+  }
+  .skillCard {
+    @apply rounded-3xl bg-gradient-to-tr from-blue-400 to-purple-600 p-6 place-items-center border border-white border-x-2 border-y-2;
+  }
+  .skillCard:nth-child(1),
+  .skillCard:nth-child(2),
+  .skillCard:nth-child(6),
+  .skillCard:nth-child(7) {
+    @apply translate-y-28;
+  }
+
+  .welcome-animation {
+    @apply scale-x-50;
+  }
+  .welcome-animation::after {
+    @apply scale-x-100 transition-transform duration-300;
   }
 }
