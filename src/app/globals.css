@@ -38,18 +38,13 @@ html {
     @apply text-4xl bg-gradient-to-b from-[#101415] to-gray-800/30 p-6 rounded-full;
   }
   .skillCard {
-    @apply rounded-3xl bg-gradient-to-tr from-blue-400 to-purple-600 p-6 place-items-center border border-white border-x-2 border-y-2;
-  }
-  .skillCard:nth-child(1),
-  .skillCard:nth-child(2),
-  .skillCard:nth-child(6),
-  .skillCard:nth-child(7) {
-    @apply translate-y-28;
+    @apply rounded-3xl bg-gradient-to-tr from-blue-400 to-purple-600 p-6 place-items-center border border-white border-x-2 border-y-2 mb-12;
   }
 
   .welcome-animation {
     @apply scale-x-50;
   }
+
   .welcome-animation::after {
     @apply scale-x-100 transition-transform duration-300;
   }

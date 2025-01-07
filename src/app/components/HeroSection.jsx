@@ -21,42 +21,19 @@ const HeroSection = () => {
           connect with like-minded individuals who share a love for programming
           and problem-solving.
         </p>
-        <div className="grid grid-cols-3 gap-3  ">
-          <SkillCard
-            image="/images/python.png"
-            name="Python"
-            className="col-start-1 row-start-1"
-          />
-          <SkillCard
-            image="/images/java.png"
-            name="Java"
-            className="col-start-1 row-start-2"
-          />
-          <SkillCard
-            image="/images/cpp.png"
-            name="C++"
-            className="col-start-2 row-start-1"
-          />
-          <SkillCard
-            image="/images/javascript.png"
-            name="Javascript"
-            className="col-start-2 row-start-2"
-          />
-          <SkillCard
-            image="/images/html.png"
-            name="HTML"
-            className="col-start-2 row-start-3"
-          />
-          <SkillCard
-            image="/images/css.png"
-            name="CSS"
-            className="col-start-3 row-start-1"
-          />
-          <SkillCard
-            image="/images/nextjs.png"
-            name="Next.js"
-            className="col-start-3 row-start-2"
-          />
+
+        <div className="flex flex-col justify-center">
+          <SkillCard image="/images/python.png" name="Python" />
+          <SkillCard image="/images/java.png" name="Java" />
+        </div>
+        <div className="flex justify-center flex-col">
+          <SkillCard image="/images/cpp.png" name="C++" />
+          <SkillCard image="/images/javascript.png" name="Javascript" />
+          <SkillCard image="/images/html.png" name="HTML" />
+        </div>
+        <div className="flex justify-center flex-col ">
+          <SkillCard image="/images/css.png" name="CSS" />
+          <SkillCard image="/images/nextjs.png" name="Next.js" />
         </div>
       </div>
     </div>
