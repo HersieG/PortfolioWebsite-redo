@@ -7,7 +7,6 @@ const Welcome = () => {
     <div className="lg:h-[92dvh] h-[100dvh] text-center place-content-center text-2xl lg:text-6xl space-y-6 ">
       <h1 className="animate-slideInRight">
         Hello, I'm <span className="text-purple-600 font-semibold">Hersie</span>
-        .
       </h1>
       <h1 className="animate-slideInLeft">
         I am an aspiring full stack developer.

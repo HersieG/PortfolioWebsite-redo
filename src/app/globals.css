@@ -37,6 +37,12 @@ html {
   .header {
     @apply text-4xl bg-gradient-to-b from-[#101415] to-gray-800/30 p-6 rounded-full;
   }
+  .header-text {
+    @apply border-b-2 border-purple-600;
+  }
+  .header-text::before {
+    @apply absolute content-[''] bg-red-400 w-full left-0 bottom-0;
+  }
   .skillCard {
     @apply rounded-3xl bg-gradient-to-tr from-blue-400 to-purple-600 p-6 place-items-center border border-white border-x-2 border-y-2 mb-12;
   }

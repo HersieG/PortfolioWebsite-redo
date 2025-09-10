@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div id="about" className="place-items-center p-16">
       <h1 className="header">
-        <span className="border-b-2 border-purple-600">About me</span>
+        <span className="header-text">About me</span>
       </h1>
       <div className="flex flex-col md:flex-row gap-6">
         {/*finish hobbies/interest */}
