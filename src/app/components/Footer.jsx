@@ -7,10 +7,10 @@ const Footer = () => {
     <div className="bg-bg-700 pb-4 pl-2 flex flex-col justify-center place-items-center gap-4">
       @HersieG
       <div className="flex gap-4">
-        <Link href="/">
+        <Link href="https://www.linkedin.com/in/hersie-gonzalez-113a082a8/">
           <FaLinkedin className=" size-5 sm:size-6 lg:size-[3dvh]" />
         </Link>
-        <Link href="/">
+        <Link href="https://github.com/HersieG">
           <FaGithub className=" size-5 sm:size-6 lg:size-[3dvh]" />
         </Link>
       </div>

@@ -13,14 +13,14 @@ const Welcome = () => {
         I am an aspiring full stack developer.
       </h1>
       <section className="flex flex-row justify-center gap-6 pt-2">
-        <Link href="/">
+        <Link href="https://www.linkedin.com/in/hersie-gonzalez-113a082a8/">
           <FaLinkedin className="hover:-translate-y-1 transition-transform duration-350 hover:text-purple-600 size-10 sm:size-12 lg:size-[6dvh]" />
         </Link>
-        <Link href="/">
+        <Link href="https://github.com/HersieG">
           <FaGithub className="hover:-translate-y-1 transition-transform duration-350 hover:text-purple-600 size-10 sm:size-12 lg:size-[6dvh]" />
         </Link>
       </section>
-      <Link href="/Resume.docx-2.pdf" target="_blank" className="">
+      <Link href="/Resume.docx-3.pdf" target="_blank" className="">
         <div className="text-base sm:text-xl md:text-2xl bg-bg-700 p-2 sm:p-3 md:p-4 rounded-2xl border border-border hover:border-purple-600 hover:border-2 transition-all duration-200 text-center w-full">
           {" "}
           Resume
