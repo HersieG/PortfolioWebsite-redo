@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 
 const HeroSection = () => {
   return (
-    <div id="about" className="p-6 sm:p-10 xl:p-16">
+    <div id="about" className="p-6 sm:p-10 xl:p-16 scroll-mt-[8vh]">
       <h1 className="header flex justify-center shadow-l mb-8">
         <span className="header-text">About me</span>
       </h1>
@@ -30,7 +30,6 @@ const HeroSection = () => {
         <SkillCard image="/images/html.png" name="HTML" />
         <SkillCard image="/images/css.png" name="CSS" />
         <SkillCard image="/images/nextjs.png" name="Next.js" />
-        
       </div>
     </div>
   );

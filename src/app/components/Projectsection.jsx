@@ -61,7 +61,7 @@ const DATA = [
 
 const ProjectSection = () => {
   return (
-    <div id="projects" className="px-6 sm:px-10 xl:px-16 py-12">
+    <div id="projects" className="px-6 sm:px-10 xl:px-16 py-12 scroll-mt-[8vh]">
       <h1 className="header flex justify-center shadow-l mb-10">
         <span className="header-text">Projects</span>
       </h1>
