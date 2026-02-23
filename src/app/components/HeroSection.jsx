@@ -5,7 +5,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <div id="about" className="place-items-center p-16">
-      <h1 className="header">
+      <h1 className="header flex justify-center">
         <span className="header-text">About me</span>
       </h1>
       <div className="flex flex-col md:flex-row gap-6">

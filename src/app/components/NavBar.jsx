@@ -9,12 +9,12 @@ const LINKS = [
   },
   {
     name: "Contact",
-    ref: "/contact",
+    ref: "#contact",
     key: 2,
   },
   {
     name: "Projects",
-    ref: "/projects",
+    ref: "#projects",
     key: 3,
   },
 ];

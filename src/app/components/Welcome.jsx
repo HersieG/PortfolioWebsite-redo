@@ -11,7 +11,7 @@ const Welcome = () => {
       <h1 className="animate-slideInLeft">
         I am an aspiring full stack developer.
       </h1>
-      <section className="place-self-center flex flex-row gap-4">
+      <section className="place-self-center flex flex-row place-content-center gap-4">
         <Link href="/">
           <FaLinkedin className="hover:-translate-y-1 transition-transform duration-[350ms] hover:text-purple-600  size-[6dvh] " />
         </Link>
