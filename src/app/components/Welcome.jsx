@@ -6,7 +6,8 @@ const Welcome = () => {
   return (
     <div className="min-h-dvh lg:min-h-[92dvh] flex flex-col items-center justify-center text-center px-6 space-y-6">
       <h1 className="animate-slideInRight text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-        Hello, I'm <span className="text-purple-600 font-semibold">Hersie</span>
+        Hello, I&apos;m{" "}
+        <span className="text-purple-600 font-semibold">Hersie</span>
       </h1>
       <h1 className="animate-slideInLeft text-text text-xl sm:text-2xl md:text-4xl lg:text-6xl">
         I am an aspiring full stack developer.
