@@ -1,12 +1,70 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bg-dark: oklch(0.08 0.01 160);
+  --bg: oklch(0.14 0.01 160);
+  --bg-light: oklch(0.22 0.01 160);
+  --bg-lighter: oklch(0.32 0.01 160);
+  --text: oklch(0.97 0 160);
+  --text-muted: oklch(0.72 0 160);
+  --highlight: oklch(0.55 0.02 160);
+  --border: oklch(0.42 0.01 160);
+  --border-muted: oklch(0.28 0.01 160);
 }
+@theme inline {
+  --color-bg-900: var(--bg-dark);
+  --color-bg-800: var(--bg);
+  --color-bg-700: var(--bg-light);
+  --color-bg-600: var(--bg-lighter);
+  --color-border: var(--border);
+  --color-highlight: var(--highlight);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
 
+  --animate-slideInRight: slideInRight 1s ease-out forwards;
+  --animate-slideInLeft: slideInLeft 1s ease-out forwards;
+  --animate-twinkle: twinkle 3s infinite;
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(25%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-25%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  --shadow-s:
+    inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000015;
+
+  --shadow-m:
+    inset 0 1px 2px #ffffff30, 0 2px 4px #00000030, 0 4px 8px #00000015;
+  --shadow-l:
+    inset 0 1px 2px #ffffff30, 0 4px 6px #00000030, 0 6px 10px #00000015;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -32,10 +90,14 @@ html {
   }
 
   .underline-animation::after {
-    @apply absolute content-[''] w-full h-1 bg-purple-600 left-0 bottom-[-4px] scale-x-0 hover:scale-x-100 origin-bottom-right hover:origin-bottom-left transition-transform duration-700;
+    @apply absolute content-[''] w-full h-1 bg-purple-600 left-0 -bottom-1 scale-x-0 origin-right transition-transform duration-700;
+  }
+
+  .underline-animation:hover::after {
+    @apply scale-x-100 origin-left;
   }
   .header {
-    @apply text-4xl bg-gradient-to-b from-[#101415] to-gray-800/30 p-6 rounded-full;
+    @apply text-4xl bg-bg-800 p-6 rounded-full;
   }
   .header-text {
     @apply border-b-2 border-purple-600;
@@ -44,7 +106,7 @@ html {
     @apply absolute content-[''] bg-red-400 w-full left-0 bottom-0;
   }
   .skillCard {
-    @apply rounded-3xl bg-gradient-to-tr from-blue-400 to-purple-600 p-6 place-items-center border border-white border-x-2 border-y-2 mb-12;
+    @apply rounded-3xl bg-linear-to-tr from-blue-400 to-purple-600 p-6 place-items-center border border-white border-x-2 border-y-2 mb-12;
   }
 
   .welcome-animation {

@@ -4,21 +4,27 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Welcome = () => {
   return (
-    <div className="lg:h-[92dvh] h-[100dvh] text-center place-content-center text-2xl lg:text-6xl space-y-6 ">
-      <h1 className="animate-slideInRight">
+    <div className="min-h-dvh lg:min-h-[92dvh] flex flex-col items-center justify-center text-center px-6 space-y-6">
+      <h1 className="animate-slideInRight text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         Hello, I'm <span className="text-purple-600 font-semibold">Hersie</span>
       </h1>
-      <h1 className="animate-slideInLeft">
+      <h1 className="animate-slideInLeft text-text text-xl sm:text-2xl md:text-4xl lg:text-6xl">
         I am an aspiring full stack developer.
       </h1>
-      <section className="place-self-center flex flex-row place-content-center gap-4">
+      <section className="flex flex-row justify-center gap-6 pt-2">
         <Link href="/">
-          <FaLinkedin className="hover:-translate-y-1 transition-transform duration-[350ms] hover:text-purple-600  size-[6dvh] " />
+          <FaLinkedin className="hover:-translate-y-1 transition-transform duration-350 hover:text-purple-600 size-10 sm:size-12 lg:size-[6dvh]" />
         </Link>
         <Link href="/">
-          <FaGithub className="hover:-translate-y-1 transition-transform duration-[350ms] hover:text-purple-600  size-[6dvh] " />
+          <FaGithub className="hover:-translate-y-1 transition-transform duration-350 hover:text-purple-600 size-10 sm:size-12 lg:size-[6dvh]" />
         </Link>
       </section>
+      <Link href="/Resume.docx-2.pdf" target="_blank" className="">
+        <div className="text-base sm:text-xl md:text-2xl bg-bg-700 p-2 sm:p-3 md:p-4 rounded-2xl border border-border hover:border-purple-600 hover:border-2 transition-all duration-200 text-center w-full">
+          {" "}
+          Resume
+        </div>
+      </Link>
     </div>
   );
 };

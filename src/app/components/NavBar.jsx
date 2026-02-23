@@ -7,11 +7,11 @@ const LINKS = [
     ref: "#about",
     key: 1,
   },
-  {
-    name: "Contact",
-    ref: "#contact",
-    key: 2,
-  },
+  // {
+  //   name: "Contact",
+  //   ref: "#contact",
+  //   key: 2,
+  // },
   {
     name: "Projects",
     ref: "#projects",
@@ -22,7 +22,7 @@ const LINKS = [
 const NavBar = () => {
   return (
     <>
-      <div className="z-40 top-0 sticky bg-black m-0 text-2xl p-4 lg:flex  justify-center h-[8vh] items-center hidden rounded-bl-full rounded-br-full scroll-smooth">
+      <div className="z-40 top-0 sticky bg-bg-800 m-0 text-2xl p-4 lg:flex  justify-center h-[8vh] items-center hidden  scroll-smooth shadow-l">
         <div>
           {LINKS.map((link) => (
             <LinkTab key={link.key} link={link.ref} name={link.name} />
