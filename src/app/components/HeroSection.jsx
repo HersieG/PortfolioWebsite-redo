@@ -10,13 +10,13 @@ const HeroSection = () => {
 
       {/* Bio */}
       <p className="text-base sm:text-lg md:text-2xl mb-8 text-center xl:text-left max-w-3xl mx-auto">
-        I am a junior in college majoring in computer science with a strong
+        I am a senior in college majoring in computer science with a strong
         passion for technology and innovation. My goal is to become a full stack
         developer, blending my skills in front-end and back-end development to
         create seamless and impactful digital experiences. I'm constantly
         exploring new technologies, honing my coding abilities, and
         collaborating on projects that challenge and inspire me. Outside of
-        academics, I enjoy playing piano and guitar and playing chess and am
+        academics, I enjoy playing piano, guitar and playing chess and am
         always eager to connect with like-minded individuals who share a love
         for programming and problem-solving.
       </p>
