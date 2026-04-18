@@ -57,6 +57,15 @@ const DATA = [
     imgUrl: "/images/blogApp.png",
     key: 5,
   },
+  {
+    name: "WiShuffle",
+    description:
+      "A music streaming app built with React and Node.js that allows users to create playlists, discover new artists, and listen to their favorite songs. Features a modern UI with smooth animations and a responsive design that works on all devices.",
+    gitUrl: "https://github.com/GavinT1234/WiShuffle",
+    websiteURL: "https://wishuffle.danielhanley.dev",
+    imgUrl: "/images/WiShuffle.png",
+    key: 6,
+  },
 ];
 
 const ProjectSection = () => {
